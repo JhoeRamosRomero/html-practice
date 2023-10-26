@@ -1,133 +1,281 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!-- Codificación ah utilizar -->
-    <meta charset="utf-8" />
 
-    <!-- Hace que el ancho del contenido sea el ancho del dispositibo -->
-    <meta name="viewport" content="width=device-width" />
+<head>
+  <!-- Codificación ah utilizar -->
+  <meta charset="utf-8" />
 
-    <!-- Es importante en el CEO -->
-    <title>Anthony Ramos Romero</title>
+  <!-- Hace que el ancho del contenido sea el ancho del dispositibo -->
+  <meta name="viewport" content="width=device-width" />
 
-    <!-- Metadato que ayuda con el CEO -->
-    <!-- Describe el contenido y es lo que aparece en el navegador -->
-    <meta name="robots" content="index, follow" />
+  <!-- Es importante en el CEO -->
+  <title>Anthony Ramos Romero</title>
 
-    <!-- Etiqueta importante para el CEO -->
-    <meta
-      name="description"
-      content="Porfolio de minudev, 4 años de experiencia como ingeniero de software"
-    />
+  <!-- Metadato que ayuda con el CEO -->
+  <!-- Describe el contenido y es lo que aparece en el navegador -->
+  <meta name="robots" content="index, follow" />
 
-    <!-- Sirve para definir el color de la barra inicial del navegador -->
-    <meta name="theme-color" content="#09f" />
+  <!-- Etiqueta importante para el CEO -->
+  <meta name="description" content="Porfolio de minudev, 4 años de experiencia como ingeniero de software" />
 
-    <!-- Define el icono que se verá en el navegador -->
-    <link rel="icon" type="image/jpg" href="images/Yo.jpg" />
+  <!-- Sirve para definir el color de la barra inicial del navegador -->
+  <meta name="theme-color" content="#09f" />
 
-    <!----------------------------------- OPEN GRAPH ----------------------------------->
-    <!-- Para más información consultar: https://ogp.me/ -->
-    <!-- Es un conjunto de etiquetas que para cuando se inserta la web en otro sitio. -->
-    <meta name="og:title" content="Porfolio de Anthony Ramos" />
-    <meta
-      name="og:description"
-      content="Detalle del portaforlio de Anthony Ramos"
-    />
-    <meta name="og:image" content="./images/Yo.jpg" />
-    <meta name="og:image:alt" content="Foto de Anthony Ramos" />
+  <!-- Define el icono que se verá en el navegador -->
+  <link rel="icon" type="image/jpg" href="images/Yo.jpg" />
 
-    <!-- La siguiente referencia es util para indicarle al navegador que se tienen páginas relacionas del mismo contenido pero en otro idioma por ejemplo -->
-    <!-- Importante para CEO -->
-    <link
-      rel="alternate"
-      href="http://127.0.0.1:3000/index.html/en"
-      hreflang="en-US"
-    />
+  <!----------------------------------- OPEN GRAPH ----------------------------------->
+  <!-- Para más información consultar: https://ogp.me/ -->
+  <!-- Es un conjunto de etiquetas que para cuando se inserta la web en otro sitio. -->
+  <meta name="og:title" content="Porfolio de Anthony Ramos" />
+  <meta name="og:description" content="Detalle del portaforlio de Anthony Ramos" />
+  <meta name="og:image" content="./images/Yo.jpg" />
+  <meta name="og:image:alt" content="Foto de Anthony Ramos" />
 
-    <!-- Indica al navegador cual es la pagina principal del sitio web -->
-    <link rel="canonical" href="http://127.0.0.1:3000" />
+  <!-- La siguiente referencia es util para indicarle al navegador que se tienen páginas relacionas del mismo contenido pero en otro idioma por ejemplo -->
+  <!-- Importante para CEO -->
+  <link rel="alternate" href="http://127.0.0.1:3000/index.html/en" hreflang="en-US" />
 
-    <!-- Existen muchos metadatos adicionales -->
-  </head>
+  <!-- Indica al navegador cual es la pagina principal del sitio web -->
+  <link rel="canonical" href="http://127.0.0.1:3000" />
 
-  <body>
-    <header>
-      <h1>Repasando HTML</h1>
-      <nav>
-        <!-- El a=Ancor nos permite navegar internamente o externamente -->
-        <a href="#experiencia">Experiencia</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="https://twitch.tv/midudev">Twitch</a>
-      </nav>
-    </header>
+  <!-- Existen muchos metadatos adicionales -->
 
-    <!-- La etique main solo se puede utilizar 1 vez en el html y es donde se coloca el contenido principal de la página -->
-    <main>
-      <p>
-        Más de 4 años de experiencia como
-        <strong>Ingeniero de Software</strong>. Desarrollador Full Stack
-      </p>
 
-      <h2>Experiencia</h2>
+  <style>
+    body {
 
-      <!-- Un Order List -->
-      <ul>
-        <!--  List Item  -->
-        <li>CSTI CORP - 2019</li>
-        <li>IT TEAM - 2020</li>
-        <li>CSTI CORP - 2021</li>
-      </ul>
+      background-color: rgba(2, 28, 28, 0.138)
+    }
+  </style>
 
+</head>
+
+<body>
+  <header>
+    <h1>Porfolio Anthony Ramos</h1>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Jfe6168ieqY?si=S90gfhWhHc_I5NvP"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+
+    <nav>
+      <!-- El a=Ancor nos permite navegar internamente o externamente -->
+      <a href="#experiencia">Experiencia</a>
+      <a href="#proyectos">Proyectos</a>
+
+      <!-- La propiedad target con el valor _blank nos sirve para indicarle a la página que habra el enlace pero no salga de la página -->
+      <!-- La propiedad rel junto con el valor no noreferrer hace que la pagina abierta no demasiada información de la página actual que podría dar problemas de seguridad-->
+      <a target="_blank" rel="noreferrer" href="https://github.com/JhoeRamosRomero/html-practice">GitHub</a>
+    </nav>
+  </header>
+
+  <audio src="https://www.youtube.com/watch?v=3nYLTiY5skU&t=5445s"></audio>
+
+  <!-- Se le pueden añadir controles(prop: controls), auto reproducción(prop:autoplay) que funciona si se reproduce como muteado(prop: muted)-->
+  <!-- Revisar detalle de la etiqueta video, son muchas cosas las que se pueden hacer -->
+  <video autoplay muted
+    src="https://vod-progressive.akamaized.net/exp=1698345584~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F4196%2F22%2F570983318%2F2698621790.mp4~hmac=65520087d9cd436909947c44de54628b010f613faf81db51033f729812c69894/vimeo-prod-skyfire-std-us/01/4196/22/570983318/2698621790.mp4">
+  </video>
+
+  <!-- La etique main solo se puede utilizar 1 vez en el html y es donde se coloca el contenido principal de la página -->
+  <main>
+    <p>
+      Más de 4 años de experiencia como
+      <strong>Ingeniero de Software</strong>. Desarrollador Full Stack
+    </p>
+
+    <h2 id="experiencia">Experiencia</h2>
+
+    <!-- Un Order List -->
+    <h6>Lista desordenada</h6>
+    <ul>
+      <!--  List Item  -->
+      <li>CSTI CORP - 2019</li>
+      <li>IT TEAM - 2020</li>
+      <li>CSTI CORP - 2021</li>
+    </ul>
+
+    <!-- En las lístas ordenas se puede especificar el tpo, si es numeración, letras, etc -->
+    <h6>Lista ordenada</h6>
+    <ol type="A" reversed start="10">
+      <li>Elemento 01</li>
+      <li>Elemento 02</li>
+      <li>Elemento 03</li>
+    </ol>
+
+    <!-- Se pueden descargar recursos envolviendo imagenes con la etiqueta 'a' pero solo es posible descargar recurso de nuestro servidor -->
+    <a href="./images/Yo.jpg" download="Yo.jpg">
       <!-- Elementos reemplazables -->
       <!-- alt es importante para CEO -->
-      <img
-        alt="Imagen de Anthony Ramos"
-        title="Foto de Anthony Ramos"
-        src="./images/Yo.jpg"
-        width="50%"
-      />
-      <br />
+      <img alt="Imagen de Anthony Ramos" title="Foto de Anthony Ramos" src="./images/Yo.jpg" width="50%" />
+    </a>
+    <br />
 
-      <!-- Las etiques div deberían de ser utilizadas para dividir -->
-      <!-- Existen 2 etiquepas para agrupar(Spam = Agrupar contenido en línea, Div = Agrupar contenido en bloque) -->
+    <!-- Las etiques div deberían de ser utilizadas para dividir -->
+    <!-- Existen 2 etiquepas para agrupar(Spam = Agrupar contenido en línea, Div = Agrupar contenido en bloque) -->
 
-      <h2>Proyectos Realizados</h2>
+    <h2 id="proyectos">Proyectos Realizados</h2>
 
-      <!-- Aside es una etique que indica que es un contenido separado del contenido principal, que está anexo-->
-      <aside>
+    <!-- Aside es una etique que indica que es un contenido separado del contenido principal, que está anexo-->
+    <aside>
+      <header>
+        <h3>Mis tecnologías favoritas</h3>
+      </header>
+      <ol>
+        <li>Java</li>
+        <li>React</li>
+        <li>SQL</li>
+        <li>Flutter</li>
+        <li>Angular</li>
+      </ol>
+    </aside>
+
+    <!-- La propiedad role nos sirve para darle semántica al contenido html, es una opción de utilizar etiquetas semánticas -->
+    <div role="button">
+      Haz click aqui
+    </div>
+
+    <!-- Define secciones dentro de documentos html -->
+    <section>
+      <!-- Contenido que es independiente y que se podría colocar en otros lugares y seguiría teniendo coerencia -->
+      <article>
         <header>
-          <h3>Mis tecnologías favoritas</h3>
+          <h4>La página de Tesla</h4>
+
+          <!-- La Propiedad loading con el valor lazy hace que se cargue el recurso cuando se necesite -->
+          <img width="100%" loading="lazy" src="/images/Tesla.png" alt="Captura de pantalla de la página web de Tesla">
         </header>
-        <ol>
-          <li>Java</li>
-          <li>React</li>
-          <li>SQL</li>
-          <li>Flutter</li>
-          <li>Angular</li>
-        </ol>
-      </aside>
+        <p>
+          Desarrollé la página de Tesla desde ccero.
+        </p>
+        <footer>
+          <small>tecnologías utilizadas: HTML, CSS, JS</small>
+        </footer>
+      </article>
+    </section>
 
-      <!-- Define secciones dentro de documentos html -->
-      <section>
-        <!-- Contenido que es independiente y que se podría colocar en otros lugares y seguiría teniendo coerencia -->
-        <article>
-          <header>
-            <h4>Sitio Web Coorporativo</h4>
-          </header>
-          <p>
-            Desarrollo de un sitio web corporativo con una interfaz amigable y
-            moderna.
-          </p>
-          <footer>
-            <small>tecnologías utilizadas: HTML, CSS, JS</small>
-          </footer>
-        </article>
-      </section>
-    </main>
 
-    <footer>
-        Copyright © 2023 - El Porfolio de Anthony Ramos
-    </footer>
-  </body>
+    <section>
+
+      <h2>Preguntas frecuentes</h2>
+
+      <!-- La etiqueta details no sirve para definir una pregunta y su respuesta -->
+
+      <details open>
+        <summary>¿Que estudios tienes?</summary>
+        <p>Estudié en la universidad de ciencias y humanidades</p>
+      </details>
+
+      <details>
+        <summary>
+          Cuáles son tus hobbies?
+        </summary>
+        <p>Me gusta mucho escuchar música</p>
+      </details>
+
+
+    </section>
+
+    <section>
+
+      <h2>Formulario de contacto</h2>
+
+      <!-- Componente de suma importancia - FORM -->
+      <!-- La propiedad action es donde se coloca ah que url se le tienen que enviar lo datos -->
+      <form method="post" action="/">
+
+        <!-- Es una agrupación de los diferentes inputs que tendremos -->
+        <fieldset>
+
+          <legend>Información personal</legend>
+
+          <!-- Los divs no dan semantica al documento. Sirven para agrupar etiquetas y estilizarlas -->
+          <div>
+
+            <!-- Para que el label se relacione con el input se tiene que especificar el for o envolver el input con el label-->
+            <label>Nombre:
+              <input type="text" name="name" placeholder="Anthony Ramos" required>
+            </label>
+
+          </div>
+
+          <div>
+            <label>Email:
+              <input type="email" name="name" placeholder="anthonyramosdev@gmail.com" required>
+            </label>
+          </div>
+
+
+        </fieldset>
+
+
+        <fieldset>
+          <legend>Información adicional</legend>
+          <div>
+            <label>Telefono
+              <input type="tel" name="telefono" placeholder="992236869" required pattern="[0-9]{9}">
+            </label>
+          </div>
+        </fieldset>
+
+
+        <fieldset>
+          <legend>Otros</legend>
+
+          <div>
+            <label for="why">¿Por qué quieres contactar?</label>
+            <select name="why" id="why">
+              <option value="1">Trabjo</option>
+              <option value="2">Duda</option>
+              <option value="3">Más información</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="terms">¿Aceptas los términos y condiciones?</label>
+            <input type="checkbox" id="terms" name="terms" required>
+          </div>
+
+          <div>
+            <!-- Datalist nos permite hacer un auto complete -->
+            <!-- No se puede estimar el listado de datalist -->
+            <datalist id="languages">
+              <option value="Java Script"></option>
+              <option value="Python"></option>
+              <option value="Java"></option>
+              <option value="C#"></option>
+            </datalist>
+
+            <label>
+              ¿Con que lenguaje quieres que te ayude?
+              <input list="languages" name="languages">
+            </label>
+
+          </div>
+
+        </fieldset>
+
+        <!-- Los botones dentro de un formulario por defecto es de typo submit -->
+        <button type="submit">Enviar contacto</button>
+
+      </form>
+
+    </section>
+
+  </main>
+
+  <footer>
+    Copyright © 2023 - El Porfolio de Anthony Ramos
+
+    <br>
+
+    <!-- Existen ancors que pre diseñados que utilizan diferentes protocolos para temas recurrentes -->
+    <a href="mailto:anthonyramosdev@gmail.com">Emvíame un correo</a>
+    <a href="tel:+51992236869">Llamar por teléfono</a>
+    <a href="whatsapp://send?text=Hola Anthony&phone=+51992236869&abid=+51 992 236 869">Whatsapp</a>
+  </footer>
+</body>
+
 </html>
