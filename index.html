@@ -55,11 +55,20 @@
   <header>
     <h1>Porfolio Anthony Ramos</h1>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Jfe6168ieqY?si=S90gfhWhHc_I5NvP"
+    <!-- El iframe nos permite incrustar otra página web en la nuestra -->
+    <!-- La propiedad frameborder sirve para especificar el borde el frame -->
+    <!-- La propiedad allow define los permisos que puede tener el iframe sobre nuestra página -->
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/Jfe6168ieqY?si=S90gfhWhHc_I5NvP"
       title="YouTube video player" frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowfullscreen></iframe>
 
+    
+    <!-- El canvas es una etiqueta que te permite dibujar en la web -->
+    <canvas>
+
+    </canvas>
+    
     <nav>
       <!-- El a=Ancor nos permite navegar internamente o externamente -->
       <a href="#experiencia">Experiencia</a>
@@ -70,6 +79,32 @@
       <a target="_blank" rel="noreferrer" href="https://github.com/JhoeRamosRomero/html-practice">GitHub</a>
     </nav>
   </header>
+
+  <dialog id="modal">
+    <h1>¿Sabias que puedes abrir un modal así?</h1>
+    <p>¡Y es totalmente nativo!</p>
+    <button id="closeDialog">Cerrar modal</button>
+  </dialog>
+
+  <!-- DATO IMPORTANTE: Por cada propiedad id que se defina en el documento HTML se crea un propiedad en el objeto window y tiene un impacto en el rendimiento -->
+
+  <button id="openDialog">Ver más información</button>
+
+  <script>
+    
+    window.openDialog.addEventListener( 'click', () => {
+
+      window.modal.showModal()
+
+    } )
+
+    window.closeDialog.addEventListener( 'click', () => {
+
+      window.modal.close()
+
+    } )
+
+  </script>
 
   <audio src="https://www.youtube.com/watch?v=3nYLTiY5skU&t=5445s"></audio>
 
